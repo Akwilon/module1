@@ -1,15 +1,19 @@
 package com.novikov.beans;
 
+import java.io.Serializable;
 import java.util.Objects;
 
-public abstract class Toy {
+public abstract class Toy  implements Serializable {
     private final Color color;
     private final Size size;
-    private int ID = Math.abs(hashCode());
+    private int value;
+    private int ID;
 
-    public Toy( Size size, Color color) {
+    public Toy( Size size, Color color, int price) {
+        setValue(price);
         this.size = size;
         this.color = color;
+        this.ID  = Math.abs(hashCode());
     }
 
 
@@ -24,28 +28,49 @@ public abstract class Toy {
         return color;
     }
 
+    public int getValue() {
+        return value;
+    }
+
+    public void setValue(int value) {
+        if (value > 0) {
+            this.value = value;
+        }
+    }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
+
         Toy toy = (Toy) o;
-        return ID == toy.ID &&
-                color == toy.color &&
-                size == toy.size;
+
+        if (value != toy.value) return false;
+        if (ID != toy.ID) return false;
+        if (color != toy.color) return false;
+        return size == toy.size;
+
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(color, size, ID);
+        int result = color != null ? color.hashCode() : 0;
+        result = 31 * result + (size != null ? size.hashCode() : 0);
+        result = 31 * result + value;
+        result = 31 * result + ID;
+        return result;
     }
 
     @Override
     public String toString() {
-        return "Toy{" +
-                "color=" + color +
-                ", size=" + size +
-                ", ID=" + ID +
-                '}';
+        final StringBuilder sb = new StringBuilder("Toy{");
+        sb.append("color=").append(color);
+        sb.append(", size=").append(size);
+        sb.append(", value=").append(value);
+        sb.append(", ID=").append(ID);
+        sb.append('}');
+        return sb.toString();
     }
+
+
 }
