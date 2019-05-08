@@ -1,13 +1,16 @@
 package com.novikov.beans.rooms;
 
 import com.novikov.beans.Room;
+import com.novikov.beans.Toy;
+
+import java.util.List;
 
 public class AdultRoom extends Room {
-    public AdultRoom(int age) {
-        super(age);
+    public AdultRoom(int age, List<Toy> toys) {
+        super(age, toys);
     }
 
-    public AdultRoom(int money, int age) {
+    public AdultRoom(int age, int money) {
         super(money, age);
     }
 

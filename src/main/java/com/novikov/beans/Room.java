@@ -6,25 +6,25 @@ import java.io.Serializable;
 import java.util.*;
 import java.util.function.Consumer;
 
-public abstract class Room  implements Serializable {
+public abstract class Room implements Serializable {
 
     private List<Toy> toys;
     private int age;
     private int money;
-    private int ID;
+    private long ID;
 
-    public Room(int age) {
-        setMoney(1000);
+    public Room(int age, List<Toy> toys) {
+        setMoney(20);
         setAge(age);
-        toys = Filler.fillIn(this.money);
-        this.ID = Math.abs(hashCode());
+        this.toys= toys;
+        this.ID = (long)(Math.abs(hashCode()));
     }
 
     public Room(int money, int age) {
         setMoney(money);
         setAge(age);
         toys = Filler.fillIn(this.money);
-        this.ID = Math.abs(hashCode());
+        this.ID = (long)(Math.abs(Math.random()*100000000L*hashCode()));
     }
 
     public List<? extends Toy> getToys() {
@@ -35,9 +35,18 @@ public abstract class Room  implements Serializable {
         this.toys = toys;
     }
 
-    public void addToy(Toy toy){
+    public void addToy(Toy toy) {
         toys.add(toy);
     }
+
+    public void deleteToy(Toy toy) {
+
+        if (toys.contains(toy)) {
+            toys.remove(toy);
+        }
+    }
+
+    ;
 
     public int getMoney() {
         return money;
@@ -59,7 +68,7 @@ public abstract class Room  implements Serializable {
         }
     }
 
-    public int getID() {
+    public long getID() {
         return ID;
     }
 
@@ -83,7 +92,6 @@ public abstract class Room  implements Serializable {
         int result = toys != null ? toys.hashCode() : 0;
         result = 31 * result + age;
         result = 31 * result + money;
-        result = 31 * result + ID;
         return result;
     }
 

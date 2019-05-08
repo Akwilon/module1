@@ -32,6 +32,10 @@ public abstract class Toy  implements Serializable {
         return value;
     }
 
+    public void setID(int ID) {
+        this.ID = ID;
+    }
+
     public void setValue(int value) {
         if (value > 0) {
             this.value = value;
@@ -57,7 +61,6 @@ public abstract class Toy  implements Serializable {
         int result = color != null ? color.hashCode() : 0;
         result = 31 * result + (size != null ? size.hashCode() : 0);
         result = 31 * result + value;
-        result = 31 * result + ID;
         return result;
     }
 

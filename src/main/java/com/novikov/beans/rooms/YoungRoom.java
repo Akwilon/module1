@@ -1,13 +1,16 @@
 package com.novikov.beans.rooms;
 
 import com.novikov.beans.Room;
+import com.novikov.beans.Toy;
+
+import java.util.List;
 
 public class YoungRoom extends Room {
-    public YoungRoom(int age) {
-        super(age);
+    public YoungRoom(int age, List<Toy> toys) {
+        super(age, toys);
     }
 
-    public YoungRoom(int money, int age) {
+    public YoungRoom(int age, int money) {
         super(money, age);
     }
 
