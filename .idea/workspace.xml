@@ -2,44 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fae3a931-dcfb-4036-be74-80dd79852270" name="Default Changelist" comment="git influence on byte file test">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/novikov/beans/rooms/RoomFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/novikov/dao/impl/SpecifiedByColor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/novikov/dao/impl/SpecifiedByColorSize.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/novikov/dao/impl/SpecifiedByPrice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/novikov/dao/impl/SpecifiedBySize.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/novikov/service/Service.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/novikov/service/creator/Creator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/novikov/service/creator/ToyCreator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/novikov/service/exception/ServiceException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/novikov/service/parser/ParametresParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/novikov/service/parser/ToyParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/novikov/service/parser/exception/ParserException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/novikov/service/serviceExtends/RoomService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/novikov/service/toySort/SortByValue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/novikov/service/toySort/Sorter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/novikov/service/validator/ToyValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/novikov/service/validator/ValidatorRes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/novikov/service/creator/ToyComparatorFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/novikov/service/creator/ToySpecifiedFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/novikov/service/toySort/SortByColor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/novikov/service/toySort/SortBySize.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/novikov/service/toySort/ToyComparator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/novikov/application/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/novikov/application/Runner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/novikov/beans/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/novikov/beans/Room.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/novikov/beans/Toy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/novikov/beans/Toy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/novikov/beans/rooms/AdultRoom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/novikov/beans/rooms/AdultRoom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/novikov/beans/rooms/YoungRoom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/novikov/beans/rooms/YoungRoom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/novikov/dao/DAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/novikov/dao/DAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/novikov/dao/impl/RoomDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/novikov/dao/impl/RoomDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/novikov/service/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/novikov/service/Service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/novikov/service/parser/ParametresParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/novikov/service/parser/ParametresParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/novikov/service/serviceExtends/RoomService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/novikov/service/serviceExtends/RoomService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/novikov/service/toySort/Sorter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/novikov/service/toySort/Sorter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/Rooms.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Rooms.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/novikov/dao/impl/RoomDAOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/novikov/dao/impl/RoomDAOTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Toy.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Toy.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Rooms.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Rooms.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/novikov/application/Runner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/novikov/application/Runner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/novikov/beans/Room.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/novikov/beans/Room.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/novikov/beans/Toy.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/novikov/beans/Toy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/novikov/beans/rooms/AdultRoom.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/novikov/beans/rooms/AdultRoom.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/novikov/beans/rooms/YoungRoom.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/novikov/beans/rooms/YoungRoom.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/novikov/dao/DAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/novikov/dao/DAO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/novikov/dao/impl/RoomDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/novikov/dao/impl/RoomDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/novikov/dao/impl/RoomDAOTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/novikov/dao/impl/RoomDAOTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/novikov/service/Service.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/novikov/service/Service.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/novikov/service/parser/ParametresParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/novikov/service/parser/ParametresParser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/novikov/service/serviceExtends/RoomService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/novikov/service/serviceExtends/RoomService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/novikov/service/toySort/Sorter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/novikov/service/toySort/Sorter.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -55,10 +39,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/novikov/service/creator/ToyCreator.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/novikov/dao/impl/RoomDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="49" column="53" selection-start-line="49" selection-start-column="53" selection-end-line="49" selection-end-column="53" />
+            <state relative-caret-position="187">
+              <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -67,22 +51,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/novikov/dao/impl/RoomDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1717">
-              <caret line="153" column="20" selection-start-line="153" selection-start-column="20" selection-end-line="153" selection-end-column="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/novikov/application/Runner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="46" column="24" lean-forward="true" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
+            <state relative-caret-position="323">
+              <caret line="31" column="33" lean-forward="true" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -93,10 +65,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/novikov/service/serviceExtends/RoomService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
+            <state relative-caret-position="252">
+              <caret line="44" column="18" selection-start-line="44" selection-start-column="18" selection-end-line="44" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#4099#4100#0" expanded="true" />
                 <element signature="e#4158#4159#0" expanded="true" />
               </folding>
             </state>
@@ -104,10 +77,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/novikov/dao/impl/SpecifiedByColor.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/novikov/service/Service.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="16" lean-forward="true" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+            <state relative-caret-position="354">
+              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -116,12 +89,38 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/novikov/service/parser/ParametresParser.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/novikov/beans/rooms/RoomFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+            <state relative-caret-position="339">
+              <caret line="32" column="16" lean-forward="true" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/novikov/service/toySort/Sorter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/novikov/beans/Toy.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-34">
+              <caret line="7" column="28" lean-forward="true" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#674#675#0" expanded="true" />
+                <element signature="e#702#703#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -142,6 +141,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>1604157753</find>
+      <find>59125484844461496</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -150,11 +150,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/novikov/Beans/Rooms/YoungRoom.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/novikov/Beans/Rooms/AdultRoom.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/novikov/Beans/Color.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/novikov/Beans/Toys/Ball.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/novikov/Beans/Toys/Car.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/novikov/Beans/Toys/Cube.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/novikov/Beans/Toys/Doll.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/novikov/Beans/Room.java" />
@@ -176,12 +171,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/novikov/dao/impl/SpecifiedByMoney.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/novikov/service/ServiceException.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/novikov/service/toySort/SortByValue.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/novikov/service/toySort/Sorter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/novikov/dao/impl/SpecifiedByAge.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/novikov/dao/impl/SpecifiedByColor.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/novikov/beans/rooms/AdultRoom.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/novikov/beans/rooms/YoungRoom.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/novikov/beans/Room.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/novikov/dao/impl/SpecifiedBySize.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/novikov/dao/impl/RoomDAOTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/novikov/dao/impl/SpecifiedByColorSize.java" />
@@ -196,9 +189,16 @@
         <option value="$PROJECT_DIR$/src/main/java/com/novikov/service/parser/ToyParser.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/novikov/dao/impl/SpecifiedByPrice.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/novikov/service/validator/ToyValidator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/novikov/service/Service.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/novikov/service/parser/ParametresParser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/novikov/service/toySort/SortByColor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/novikov/service/toySort/SortBySize.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/novikov/service/toySort/ToyComparator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/novikov/service/toySort/Sorter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/novikov/service/creator/ToySpecifiedFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/novikov/service/creator/ToyComparatorFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/novikov/service/serviceExtends/RoomService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/novikov/service/Service.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/novikov/beans/Room.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/novikov/dao/impl/RoomDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/novikov/application/Runner.java" />
       </list>
@@ -216,6 +216,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -257,7 +258,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="novikov" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="beans" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="module1" type="b2602c69:ProjectViewProjectNode" />
@@ -266,8 +267,8 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="novikov" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
+              <item name="beans" type="462c0819:PsiDirectoryNode" />
+              <item name="rooms" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="module1" type="b2602c69:ProjectViewProjectNode" />
@@ -276,37 +277,8 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="novikov" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="module1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="module1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="novikov" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="creator" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="module1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="module1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="novikov" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="parser" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="module1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="module1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="novikov" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="validator" type="462c0819:PsiDirectoryNode" />
+              <item name="beans" type="462c0819:PsiDirectoryNode" />
+              <item name="toys" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="module1" type="b2602c69:ProjectViewProjectNode" />
@@ -316,7 +288,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -424,6 +395,7 @@
       <workItem from="1557224088780" duration="1119000" />
       <workItem from="1557225288994" duration="27627000" />
       <workItem from="1557303836994" duration="36879000" />
+      <workItem from="1557385544398" duration="8713000" />
     </task>
     <task id="LOCAL-00001" summary="git influence on byte file test">
       <created>1557258895056</created>
@@ -468,12 +440,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73240000" />
+    <option name="totallyTimeSpent" value="81953000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24496645" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24832214" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -513,9 +485,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="git influence on byte file test" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/module1.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://C:/Program Files/Log4j/examples/Sort.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="239">
@@ -545,18 +514,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/novikov/beans/toys/Car.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#209#210#0" expanded="true" />
-            <element signature="e#250#251#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -640,16 +597,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/novikov/service/toySort/Sorter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/novikov/beans/rooms/AdultRoom.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -698,36 +645,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/novikov/beans/Room.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/novikov/beans/rooms/RoomFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="16" lean-forward="true" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/novikov/service/toySort/SortByValue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/novikov/dao/DAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -738,13 +655,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/novikov/service/parser/Parser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/novikov/service/parser/Parser.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/novikov/service/parser/exception/ParserException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -760,48 +671,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/novikov/beans/Size.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="7" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/novikov/beans/Color.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/novikov/beans/toys/create/Creator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/novikov/service/creator/Creator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/novikov/beans/Toy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#674#675#0" expanded="true" />
-            <element signature="e#702#703#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -891,10 +766,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/novikov/service/Service.java">
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.base/java/util/function/Predicate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="39" column="9" lean-forward="true" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
+        <state relative-caret-position="158">
+          <caret line="48" column="12" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/novikov/dao/impl/SpecifiedByColor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -911,38 +793,184 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/novikov/dao/impl/SpecifiedByColor.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/novikov/service/toySort/SortBySize.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="16" lean-forward="true" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+        <state relative-caret-position="204">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#148#149#0" expanded="true" />
+            <element signature="e#209#210#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/novikov/service/toySort/SortByValue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.base/java/util/function/Predicate.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/novikov/beans/toys/Car.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="48" column="12" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
+        <state relative-caret-position="152">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#209#210#0" expanded="true" />
+            <element signature="e#250#251#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/novikov/service/serviceExtends/RoomService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/novikov/service/toySort/Sorter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
+        <state relative-caret-position="170">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4158#4159#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/novikov/service/creator/ToyCreator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
+        <state relative-caret-position="180">
           <caret line="49" column="53" selection-start-line="49" selection-start-column="53" selection-end-line="49" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/novikov/service/toySort/SortByColor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#206#207#0" expanded="true" />
+            <element signature="e#230#231#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/novikov/beans/Toy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-34">
+          <caret line="7" column="28" lean-forward="true" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#674#675#0" expanded="true" />
+            <element signature="e#702#703#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/novikov/service/creator/ToySpecifiedFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="37" column="5" lean-forward="true" selection-start-line="12" selection-start-column="2" selection-end-line="37" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/novikov/service/toySort/ToyComparator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/novikov/beans/Size.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="7" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/novikov/beans/Color.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/novikov/service/creator/ToyComparatorFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="21" column="43" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/novikov/beans/toys/create/Creator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/novikov/beans/rooms/RoomFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="32" column="16" lean-forward="true" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/novikov/service/Service.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/novikov/service/serviceExtends/RoomService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="44" column="18" selection-start-line="44" selection-start-column="18" selection-end-line="44" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4099#4100#0" expanded="true" />
+            <element signature="e#4158#4159#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/novikov/dao/impl/RoomDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/novikov/beans/Room.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="23" column="24" lean-forward="true" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -951,18 +979,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/novikov/application/Runner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="46" column="24" lean-forward="true" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/novikov/dao/impl/RoomDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1717">
-          <caret line="153" column="20" selection-start-line="153" selection-start-column="20" selection-end-line="153" selection-end-column="20" />
+        <state relative-caret-position="323">
+          <caret line="31" column="33" lean-forward="true" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

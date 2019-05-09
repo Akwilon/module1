@@ -17,7 +17,7 @@ public abstract class Room implements Serializable {
         setMoney(20);
         setAge(age);
         this.toys= toys;
-        this.ID = (long)(Math.abs(hashCode()));
+        this.ID = System.identityHashCode(this) ;
     }
 
     public Room(int money, int age) {

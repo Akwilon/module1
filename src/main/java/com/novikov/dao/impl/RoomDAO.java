@@ -38,9 +38,9 @@ public class RoomDAO implements DAO<Room>, Serializable {
 
 
     public void add(Room obj) throws DAOException {
-        for(Room r :rooms){
+        for (Room r : rooms) {
             if (r.getID() == obj.getID()) {
-                logger.error(obj.getClass()+ " Already exist");
+                logger.error(obj.getClass() + " Already exist");
                 throw new DAOException("Room already in database");
             }
         }
@@ -82,8 +82,15 @@ public class RoomDAO implements DAO<Room>, Serializable {
     public void remove(long id) throws DAOException {
 
         if (isContain(id)) {
-            rooms.removeIf(r1 -> r1.getID() == id);
-            update();
+            Iterator<Room> iterator = rooms.iterator();
+            while (iterator.hasNext()) {
+                Room value = iterator.next();
+                if (value.getID() == id) {
+                    iterator.remove();
+                    update();
+                    break;
+                }
+            }
         } else {
             logger.error("No element to remove by id");
             throw new DAOException("No such element");

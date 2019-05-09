@@ -19,4 +19,12 @@ public class ParametresParser {
         return Arrays.asList(split);
     }
 
+    public static String parseLong(String string) throws ParserException {
+        if (!string.matches("^\\d+$")) {
+            logger.error("Wrong string form " + string);
+            throw new ParserException("Cannot parse input string!");
+        }
+        return string;
+
+    }
 }
