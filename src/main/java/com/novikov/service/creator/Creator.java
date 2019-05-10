@@ -6,7 +6,7 @@ import com.novikov.service.parser.exception.ParserException;
 
 import java.util.List;
 
-public interface Creator {
-    public Toy createFromString(String string)throws ParserException, ServiceException;
-    public List<Toy> readFromFile(String path)throws ParserException, ServiceException;
+public interface Creator<T> {
+    public T createFromString(String string)throws ParserException, ServiceException;
+    public List<T> readFromFile(String path)throws ParserException, ServiceException;
 }
